@@ -54,4 +54,4 @@ class PaperRockScissors{
 
 
 module.exports.PaperRockScissors = PaperRockScissors;
-
+console.log(module.exports.PaperRockScissors)

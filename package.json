@@ -1,17 +1,18 @@
 {
   "name": "paperrockscissors",
   "version": "1.0.0",
-  "description": "paperRockScissors",
-  "main": "index.js",
+  "description": "",
+  "main": "paperRockScissors.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "type": "module"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fig369/PaperRockScissors.git"
   },
   "keywords": [
-    "paperRockScissors"
+    "PaperRockScissors"
   ],
   "author": "Fig",
   "license": "ISC",
