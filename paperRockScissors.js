@@ -1,6 +1,6 @@
 class PaperRockScissors{
-    constructor(){
-      const choices = {
+    constructor(choices){
+      choices = {
         rock: {
           name: "Rock",
           defeats: "scissors",
