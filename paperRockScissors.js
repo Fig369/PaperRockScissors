@@ -1,57 +1,64 @@
 class PaperRockScissors{
     constructor(){
+      const choices = {
+        rock: {
+          name: "Rock",
+          defeats: "scissors",
+        },
+        paper: {
+          name: "Paper",
+          defeats: "rock",
+        },
+        scissors: {
+          name: "Scissors",
+          defeats: "paper",
+        },
+      };
+      this.choices = choices
     }
     paper(){
-        var bot = Math.floor(Math.random() * 3);
-        if(bot == 0){
-         var computerChoice = 'scissors';
-         var result = 'loss';
-         console.log(computerChoice, result);}
-        if(bot == 1){
-          var computerChoice = 'paper';
-          var result = 'tie';
-          console.log(computerChoice, result);}
-        if(bot == 2){
-          var computerChoice = 'rock';
-          var result= 'win'
-          console.log(computerChoice, result);
-        }
-      }
+      return `${this.choices.paper}`
+    }
     rock(){
-        var bot = Math.floor(Math.random() * 3);
-        if(bot == 0){
-         var computerChoice = 'paper';
-         var result = 'loss';
-         console.log(computerChoice, result);}
-        if(bot == 1){
-          var computerChoice = 'rock';
-          var result = 'tie';
-          console.log(computerChoice, result);}
-        if(bot == 2){
-          var computerChoice = 'scissors';
-          var result = 'win';
-          console.log(computerChoice, result);}
+      return `${this.choices.rock}`
         }
     scissors(){
-        var bot = Math.floor(Math.random() * 3);
-        if(bot == 0){
-         var computerChoice = 'rock';
-         var result = 'loss';
-         console.log(computerChoice, result);
-        }
-        if(bot == 1){
-          var computerChoice = 'scissors';
-          var result = 'tie';
-          console.log(computerChoice, result);
-        }
-        if(bot == 2){
-          var computerChoice = 'rock';
-          var result = 'win';
-          console.log(computerChoice, result);
-        }
+      return `${this.choices.scissors}`
   }
 }
 
+/* function compChoice() {
+  const compChoiceNumber = Math.random();
+  if (compChoiceNumber < 0.2) {
+    compChoice = "rock";
+  } else if (compChoiceNumber <= 0.4) {
+    compChoice = "paper";
+  } else if (compChoiceNumber <= 0.6) {
+    compChoice = "scissors";
+  }
+  //console.log(compChoice);
+}
 
-module.exports.PaperRockScissors = PaperRockScissors;
-console.log(module.exports.PaperRockScissors)
+function updateScore(playerChoice) {
+  //console.log(playerChoice, compChoice);
+  if (playerChoice === compChoice) {
+    resultText.textContent = "It's a tie";
+  } else {
+    let choice = choices[playerChoice];
+    if (choice.defeats.indexOf(compChoice) > -1) {
+      resultText.textContent = "You Won!";
+      playerScoreNumber++;
+      playerScoreEl.textContent = playerScoreNumber;
+    } else {
+      resultText.textContent = "You Lost!";
+      compScoreNumber++;
+      compScoreEl.textContent = compScoreNumber;
+    }
+  }
+}
+ */
+
+const y = PaperRockScissors
+module.exports = y
+console.log(y)
+
