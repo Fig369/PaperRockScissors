@@ -1,7 +1,7 @@
 {
   "name": "paperrockscissors",
   "version": "1.0.0",
-  "description": "PaperRockScissors",
+  "description": "paperRockScissors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Fig369/PaperRockScissors.git"
   },
+  "keywords": [
+    "paperRockScissors"
+  ],
   "author": "Fig",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Fig369/PaperRockScissors/issues"
   },
-  "homepage": "https://github.com/Fig369/PaperRockScissors#readme",
-  "keywords": [
-    "PaperRockScissors"
-  ]
+  "homepage": "https://github.com/Fig369/PaperRockScissors#readme"
 }
